@@ -17,4 +17,9 @@ services:
         - '/bin/frpc'
         - '-c'
         - '/etc/frp/frpc.ini'
+
+networks:
+  default:
+    external: true
+    name: web
 ##
